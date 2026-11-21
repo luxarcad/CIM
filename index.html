@@ -1,550 +1,652 @@
-﻿<!DOCTYPE html>
-
+﻿
+<!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CIM | Consultoría Integral Migratoria</title>
-    <!-- Favicon -->
-    <link rel="icon" href="images/favicon.png" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Css globales -->
-    <link rel="stylesheet" href="css/global.css" />
-    <link rel="stylesheet" href="css/index.css" />
+  <title>CIM | Consultoría Integral Migratoria</title>
+
+  <meta
+    name="description"
+    content="Consultoría Integral Migratoria. Asesoría personalizada en visas, regularización migratoria, procesos laborales y estudios en el extranjero."
+  >
+
+  <meta name="theme-color" content="#102437">
+
+  <!-- Fuentes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Manrope:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Bootstrap Icons -->
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.2/font/bootstrap-icons.min.css"
+  >
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/variables.css">
+  <link rel="stylesheet" href="./css/global.css">
+  <link rel="stylesheet" href="./css/components.css">
+  <link rel="stylesheet" href="./css/animations.css">
+
+  <link
+    rel="icon"
+    type="image/png"
+    href="./assets/images/favicon.png"
+  >
 </head>
+
 <body>
 
-    <!-- header -->
-    <header class="header">
-        <nav class="nav container">
-            <a href="#inicio" class="nav-logo">
-                <img src="images/cim_grande.png" alt="CIM Logo" />
+  <a class="skip-link" href="#contenido">
+    Saltar al contenido
+  </a>
+
+  <!-- HEADER -->
+  <header class="site-header" id="site-header">
+    <div class="container header-inner">
+
+      <a
+        class="brand"
+        href="./index.html"
+        aria-label="CIM, ir al inicio"
+      >
+        <img
+          src="./assets/images/cim_grande.png"
+          alt="Consultoría Integral Migratoria"
+          width="190"
+          height="72"
+        >
+      </a>
+
+      <nav
+        class="main-nav"
+        id="main-nav"
+        aria-label="Navegación principal"
+        data-main-nav
+      >
+        <ul class="nav-list">
+          <li><a class="nav-link" href="#inicio">Inicio</a></li>
+          <li><a class="nav-link" href="#nosotros">Nosotros</a></li>
+          <li><a class="nav-link" href="#servicios">Servicios</a></li>
+          <li><a class="nav-link" href="#metodo">Nuestro enfoque</a></li>
+          <li><a class="nav-link" href="#podcast">Podcast</a></li>
+        </ul>
+
+        <a class="nav-contact" href="#contacto">
+          Hablemos
+          <i class="bi bi-arrow-up-right" aria-hidden="true"></i>
+        </a>
+      </nav>
+
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-label="Abrir menú"
+        aria-controls="main-nav"
+        aria-expanded="false"
+        data-menu-toggle
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+    </div>
+  </header>
+
+  <main id="contenido">
+
+    <!-- HERO -->
+    <section class="hero" id="inicio" aria-labelledby="hero-title">
+
+      <div class="container hero-grid">
+
+        <div class="hero-content">
+
+          <div class="hero-kicker eyebrow">
+            <span class="kicker-line"></span>
+            CONSULTORÍA INTEGRAL MIGRATORIA
+          </div>
+
+          <h1 class="hero-title" id="hero-title">
+            El mundo
+            es amplio.
+            <span>Tu camino también.</span>
+          </h1>
+
+          <p class="hero-description">
+            Cada proyecto comienza con una decisión.
+            Te acompañamos con orientación profesional,
+            claridad y atención personalizada durante
+            tu proceso migratorio.
+          </p>
+
+          <div class="hero-actions">
+
+            <a class="btn btn-gold" href="#servicios">
+              Explorar servicios
+              <i class="bi bi-arrow-up-right" aria-hidden="true"></i>
             </a>
 
-            <ul class="nav-menu">
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#nosotros">Nosotros</a></li>
-                <li><a href="#podcast">Podcast</a></li>
-                <li><a href="#servicios">Servicios</a></li>
-                <li><a href="#faq">FAQ</a></li>
-                <li><a href="#contacto" class="nav-cta">Contacto</a></li>
-            </ul>
+            <a class="text-link" href="#nosotros">
+              Descubre CIM
+              <i class="bi bi-arrow-right" aria-hidden="true"></i>
+            </a>
 
-            <button class="nav-toggle" aria-label="Abrir menú">
-                <ion-icon name="menu-outline"></ion-icon>
-            </button>
-        </nav>
-    </header>
+          </div>
 
-    <main>
+          <div class="hero-bottom">
 
-        <!-- Hero/Inicio -->
-        <section id="inicio" class="hero">
-            <div class="hero-content container">
-                <span class="hero-eyebrow">Consultoría Integral Migratoria</span>
+            <div class="hero-proof">
+              <i class="bi bi-globe-americas" aria-hidden="true"></i>
 
-                <h1 class="hero-title">
-                    Tu proceso migratorio<br />
-                    <span>con claridad, estrategia y respaldo legal</span>
-                </h1>
-
-                <p class="hero-text">
-                    Te acompañamos paso a paso en cada trámite migratorio,
-                    evitando errores, retrasos y decisiones costosas.
-                </p>
-
-                <div class="hero-actions">
-                    <a href="#contacto" class="btn-primary">Agenda una asesoría</a>
-                    <a href="#servicios" class="btn-secondary">Ver servicios</a>
-                </div>
+              <div>
+                <strong>Visión internacional</strong>
+                <span>Atención con enfoque humano</span>
+              </div>
             </div>
 
-            <div class="hero-visual">
-                <div class="hero-icon">
-                    <!-- Heroicon SVG -->
-                    <svg xmlns="http://www.w3.org/2000/svg"
-                         fill="none"
-                         viewBox="0 0 24 24"
-                         stroke-width="1.2"
-                         stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round"
-                              d="M12 21c4.97 0 9-4.03 9-9s-4.03-9-9-9-9
-                4.03-9 9 4.03 9 9 9zM2.25 12h19.5M12
-                2.25c2.25 2.25 3.75 5.25 3.75 9s-1.5
-                6.75-3.75 9m0-18c-2.25 2.25-3.75
-                5.25-3.75 9s1.5 6.75 3.75 9" />
-                    </svg>
-                </div>
-            </div>
-        </section>
+            <a class="scroll-indicator" href="#nosotros">
+              <span>DESLIZA PARA EXPLORAR</span>
+              <i class="bi bi-arrow-down" aria-hidden="true"></i>
+            </a>
 
-        <!-- NOSOTROS -->
-        <section id="nosotros" class="about section-highlight">
-            <div class="container about-grid">
+          </div>
 
-                <div class="about-text">
-                    <h2 class="section-title">Quiénes somos</h2>
-
-                    <p>
-                        En <strong>CIM</strong> somos una consultoría especializada en procesos migratorios,
-                        enfocada en brindar soluciones claras, éticas y personalizadas.
-                    </p>
-
-                    <p>
-                        Nuestro enfoque combina experiencia legal, análisis estratégico
-                        y acompañamiento humano. Aquí no eres un número, eres un caso real.
-                    </p>
-                </div>
-
-                <div class="about-values">
-                    <div class="value-card">
-                        <ion-icon name="shield-checkmark-outline"></ion-icon>
-                        <h3>Confianza</h3>
-                        <p>Procesos claros y sin promesas vacías.</p>
-                    </div>
-
-                    <div class="value-card">
-                        <ion-icon name="briefcase-outline"></ion-icon>
-                        <h3>Experiencia</h3>
-                        <p>Casos reales, criterios sólidos y asesoría profesional.</p>
-                    </div>
-
-                    <div class="value-card">
-                        <ion-icon name="people-outline"></ion-icon>
-                        <h3>Acompañamiento</h3>
-                        <p>Te guiamos antes, durante y después del trámite.</p>
-                    </div>
-                </div>
-
-            </div>
-        </section>
-
-        <!-- Videos Grid -->
-        <section id="podcast" class="podcast section-highlight">
-            <div class="container">
-
-                <h2 class="section-title">Podcast & Contenido</h2>
-
-                <div class="podcast-grid">
-
-                    <!-- Video Item -->
-                    <article class="podcast-card"
-                             data-title="Episodio 01 - El derecho laboral de los migrantes"
-                             data-description="Una mirada profesional y humana a los derechos de los migrantes regularizados o en calidad migratoria irregular.Con nosotros un invitado especial el DR #juangomezlemus abogado especialista en materia laboral, no comparte su visión y experiencia."
-                             data-url="https://www.facebook.com/CIMIGRATORIA"
-                             data-embed="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2FCIMIGRATORIA%2Fvideos%2F2101551583680539%2F&show_text=false&width=476&t=0">
-
-                        <div class="podcast-frame">
-                            <iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2FCIMIGRATORIA%2Fvideos%2F2101551583680539%2F&show_text=false&width=476&t=0" width="476" height="476" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true" loading="lazy" tabindex="-1" aria-hidden="true"></iframe>
-
-                            <div class="podcast-overlay">
-                                <div class="play-button">▶</div>
-                            </div>
-                        </div>
-                        <div class="podcast-info">
-                            <h3>Episodio 01  - El derecho laboral de los migrantes</h3>
-                            <p>
-                                Una mirada profesional y humana a los derechos de los migrantes
-                                regularizados o en calidad migratoria irregular.Con nosotros un
-                                invitado especial el DR Juan Gomez Lemus abogado especialista en
-                                materia laboral, no comparte su visión y experiencia.
-                            </p>
-                        </div>
-                    </article>
-                    <article class="podcast-card"
-                             data-title="Episodio 01 - 2do Segmento"
-                             data-description="En este espacio platicaremos. Formas de regularización migratoria, listado de instituciones que deben velar por nuestros derechos, dirigido a extranjeros que radican en México de manera regular o irregular, así como, a nuestro connacionales que viven en el extranjero."
-                             data-url="https://www.facebook.com/CIMIGRATORIA"
-                             data-embed="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2FCIMIGRATORIA%2Fvideos%2F4138416163060778%2F&show_text=false&width=476&t=0">
-
-                        <div class="podcast-frame">
-                            <iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2FCIMIGRATORIA%2Fvideos%2F4138416163060778%2F&show_text=false&width=476&t=0" width="476" height="476" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true" loading="lazy" tabindex="-1" aria-hidden="true"></iframe>
-
-                            <div class="podcast-overlay">
-                                <div class="play-button">▶</div>
-                            </div>
-                        </div>
-                        <div class="podcast-info">
-                            <h3>Episodio 01 - 2do Segmento</h3>
-                            <p>
-                                En este espacio platicaremos. Formas de regularización
-                                migratoria, listado de instituciones que deben velar por
-                                nuestros derechos, dirigido a extranjeros que radican en
-                                México de manera regular o irregular, así como, a nuestro
-                                connacionales que viven en el extranjero.
-                            </p>
-                        </div>
-                    </article>
-                    <article class="podcast-card"
-                             data-title="Episodio 01 - 3er Segmento"
-                             data-description="Vamos el 13vo año brindando asesoría legal en materia
-                            migratoria, a mexicanos y extranjeros que buscan una manera
-                            legal migrar y permanecer en un país. Procesamos desde un
-                            pasaporte, hasta una visa en todas sus categorías, residencias
-                            y naturalizaciones. La autoridad competente es quien define
-                            finalmente, pero trabajar en el marco  normativo, actualizarnos
-                            en materia legal, nos permiten incrementar la tasa de aceptación;
-                            Las reformas también impactan a los extranjeros. Infórmate."
-                             data-url="https://www.facebook.com/CIMIGRATORIA"
-                             data-embed="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2FCIMIGRATORIA%2Fvideos%2F1357920888781627%2F&show_text=false&width=476&t=0">
-
-                        <div class="podcast-frame">
-                            <iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2FCIMIGRATORIA%2Fvideos%2F1357920888781627%2F&show_text=false&width=476&t=0" width="476" height="476" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true" loading="lazy" tabindex="-1" aria-hidden="true"></iframe>
-
-                            <div class="podcast-overlay">
-                                <div class="play-button">▶</div>
-                            </div>
-                        </div>
-                        <div class="podcast-info">
-                            <h3>Episodio 01 - 3er Segmento</h3>
-                            <p>
-                                Vamos el 13vo año brindando asesoría legal en materia
-                                migratoria, a mexicanos y extranjeros que buscan una manera
-                                legal migrar y permanecer en un país. Procesamos desde un
-                                pasaporte, hasta una visa en todas sus categorías, residencias
-                                y naturalizaciones. La autoridad competente es quien define
-                                finalmente, pero trabajar en el marco  normativo, actualizarnos
-                                en materia legal, nos permiten incrementar la tasa de aceptación;
-                                Las reformas también impactan a los extranjeros. Infórmate.
-                            </p>
-                        </div>
-                    </article>
-                    <article class="podcast-card"
-                             data-title="Episodio 01 - 4to Segmento"
-                             data-description="Agradecemos la oportuna participación en este espacio a nuestro invitado especial el
-                            Dr. Juan Gomez Lemus. En manos de expertos les compartiremos
-                            informacion de alto valor. Los extranjeros naturalizados en Mexico
-                            tambien pueden ejercer sus derechos, mexicanos en el extranjero
-                            nuestros Consulados en colaboracion con la S.R.E estan para salvaguardar.
-                            Ayudanos a seguir ayudando."
-                             data-url="https://www.facebook.com/CIMIGRATORIA"
-                             data-embed="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2FCIMIGRATORIA%2Fvideos%2F1614300322622026%2F&show_text=false&width=476&t=0">
-
-                        <div class="podcast-frame">
-                            <iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2FCIMIGRATORIA%2Fvideos%2F1614300322622026%2F&show_text=false&width=476&t=0" width="476" height="476" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true" loading="lazy" tabindex="-1" aria-hidden="true"></iframe>
-
-                            <div class="podcast-overlay">
-                                <div class="play-button">▶</div>
-                            </div>
-                        </div>
-                        <div class="podcast-info">
-                            <h3>Episodio 01 - 4to Segmento</h3>
-                            <p>
-                                Agradecemos la oportuna participación en este espacio a nuestro invitado especial el
-                                Dr. Juan Gomez Lemus. En manos de expertos les compartiremos
-                                informacion de alto valor. Los extranjeros naturalizados en Mexico
-                                tambien pueden ejercer sus derechos, mexicanos en el extranjero
-                                nuestros Consulados en colaboracion con la S.R.E estan para salvaguardar.
-                                Ayudanos a seguir ayudando.
-                            </p>
-                        </div>
-                    </article>
-                    <article class="podcast-card"
-                             data-title="Episodio 02 - Reunificación Familiar, la figura de Asilo, Refugio"
-                             data-description="En Consultoría Integral Migratoria CIM tenemos como invitado
-                            a Juan Carlos Acacio Abarca en nuestra segunda edición del
-                            Podcast Conciencia Migratoria. Platicaremos sobre Reunificación
-                            Familiar, la figura de Asilo, Refugio y compartiremos nuestras
-                            experiencias a lo largo de esta trayectoria profesional."
-                             data-url="https://www.facebook.com/CIMIGRATORIA"
-                             data-embed="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2FCIMIGRATORIA%2Fvideos%2F1050795430311470%2F&show_text=false&width=476&t=0">
-
-                        <div class="podcast-frame">
-                            <iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2FCIMIGRATORIA%2Fvideos%2F1050795430311470%2F&show_text=false&width=476&t=0" width="476" height="476" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true" loading="lazy" tabindex="-1" aria-hidden="true"></iframe>
-
-                            <div class="podcast-overlay">
-                                <div class="play-button">▶</div>
-                            </div>
-                        </div>
-                        <div class="podcast-info">
-                            <h3>Episodio 02 - Reunificación Familiar, la figura de Asilo, Refugio</h3>
-                            <p>
-                                En Consultoría Integral Migratoria CIM tenemos como invitado
-                                a Juan Carlos Acacio Abarca en nuestra segunda edición del
-                                Podcast Conciencia Migratoria. Platicaremos sobre Reunificación
-                                Familiar, la figura de Asilo, Refugio y compartiremos nuestras
-                                experiencias a lo largo de esta trayectoria profesional.
-                            </p>
-                        </div>
-                    </article>
-                    <article class="podcast-card"
-                             data-title="Episodio 02 - 2do segmento"
-                             data-description="Migrar es una necesidad, en el camino hay historias que han marcado
-                                               significativamente nuestras vidas profesionales. Juan Carlos Acacio
-                                               Abarca nos comparte sus experiencias."
-                             data-url="https://www.facebook.com/CIMIGRATORIA"
-                             data-embed="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2FCIMIGRATORIA%2Fvideos%2F1747850206167197%2F&show_text=false&width=476&t=0">
-
-                        <div class="podcast-frame">
-                            <iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2FCIMIGRATORIA%2Fvideos%2F1747850206167197%2F&show_text=false&width=476&t=0" width="476" height="476" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true" loading="lazy" tabindex="-1" aria-hidden="true"></iframe>
-
-                            <div class="podcast-overlay">
-                                <div class="play-button">▶</div>
-                            </div>
-                        </div>
-                        <div class="podcast-info">
-                            <h3>Episodio 02 - 2do segmento</h3>
-                            <p>
-                                Migrar es una necesidad, en el camino hay historias que han marcado
-                                significativamente nuestras vidas profesionales. Juan Carlos Acacio
-                                Abarca nos comparte sus experiencias.
-                            </p>
-                        </div>
-                    </article>
-                    <article class="podcast-card"
-                             data-title="Episodio 02 - 3er segmento"
-                             data-description="En CIM El Milagro Consular existe, estudiamos los casos, perfilamos a los
-                                                  solicitantes y  brindamos condiciones para ser sujetos de aprobación.
-                                                  Contamos con 13 años proporcionando asesoría especializada en materia
-                                                  migratoria, nuestro compromiso es con ustedes, con sus familias.
-                                                  Consultoría Integral Migratoria CIM"
-                             data-url="https://www.facebook.com/CIMIGRATORIA"
-                             data-embed="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2FCIMIGRATORIA%2Fvideos%2F1420596812725338%2F&show_text=false&width=476&t=0">
-
-                        <div class="podcast-frame">
-                            <iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2FCIMIGRATORIA%2Fvideos%2F1420596812725338%2F&show_text=false&width=476&t=0" width="476" height="476" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true" loading="lazy" tabindex="-1" aria-hidden="true"></iframe>
-
-                            <div class="podcast-overlay">
-                                <div class="play-button">▶</div>
-                            </div>
-                        </div>
-                        <div class="podcast-info">
-                            <h3>Episodio 02 - 3er segmento</h3>
-                            <p>
-                                En CIM El Milagro Consular existe, estudiamos los casos, perfilamos a los
-                                solicitantes y  brindamos condiciones para ser sujetos de aprobación.
-                                Contamos con 13 años proporcionando asesoría especializada en materia
-                                migratoria, nuestro compromiso es con ustedes, con sus familias.
-                                Consultoría Integral Migratoria CIM
-                            </p>
-                        </div>
-                    </article>
-                    <article class="podcast-card"
-                             data-title="Episodio 02 - 4to segmento"
-                             data-description="Juan Carlos Acacio Abarca  Co fundador de la Fundación Uniendo
-                                               Miradas nos platica sobre la Reunificación Familiar. Acompáñanos a
-                                               vislumbrar los mitos y realidades. Migra legalmente y salvaguarda tus
-                                               derechos."
-                             data-url="https://www.facebook.com/CIMIGRATORIA"
-                             data-embed="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2FCIMIGRATORIA%2Fvideos%2F718485914011027%2F&show_text=false&width=476&t=0">
-
-                        <div class="podcast-frame">
-                            <iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2FCIMIGRATORIA%2Fvideos%2F718485914011027%2F&show_text=false&width=476&t=0" width="476" height="476" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true" loading="lazy" tabindex="-1" aria-hidden="true"></iframe>
-
-                            <div class="podcast-overlay">
-                                <div class="play-button">▶</div>
-                            </div>
-                        </div>
-                        <div class="podcast-info">
-                            <h3>Episodio 02 - 4to segmento</h3>
-                            <p>
-                                Juan Carlos Acacio Abarca  Co fundador de la Fundación Uniendo
-                                Miradas nos platica sobre la Reunificación Familiar. Acompáñanos a
-                                vislumbrar los mitos y realidades. Migra legalmente y salvaguarda tus
-                                derechos.
-                            </p>
-                        </div>
-                    </article>
-                    <article class="podcast-card"
-                             data-title="Episodio 02 - 5to segmento"
-                             data-description="Consultoría Integral Migratoria CIM y Uniendo Miradas ayudamos a la gente.
-                                               Juan Carlos Acacio Abarca agradecemos tu valiosa participación en este
-                                               espacio creado para generar conciencia migratoria, informar y seguir
-                                               construyendo sueños. Agradecemos a su confianza."
-                             data-url="https://www.facebook.com/CIMIGRATORIA"
-                             data-embed="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2FCIMIGRATORIA%2Fvideos%2F1464351304945407%2F&show_text=false&width=476&t=0">
-
-                        <div class="podcast-frame">
-                            <iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2FCIMIGRATORIA%2Fvideos%2F1464351304945407%2F&show_text=false&width=476&t=0" width="476" height="476" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true" loading="lazy" tabindex="-1" aria-hidden="true"></iframe>
-
-                            <div class="podcast-overlay">
-                                <div class="play-button">▶</div>
-                            </div>
-                        </div>
-                        <div class="podcast-info">
-                            <h3>Episodio 02 - 5to segmento</h3>
-                            <p>
-                                Consultoría Integral Migratoria CIM y Uniendo Miradas ayudamos a la gente.
-                                Juan Carlos Acacio Abarca agradecemos tu valiosa participación en este
-                                espacio creado para generar conciencia migratoria, informar y seguir
-                                construyendo sueños. Agradecemos a su confianza.
-                            </p>
-                        </div>
-                    </article>
-                </div>
-
-            </div>
-        </section>
-
-        <!-- SERVICIOS -->
-        <section id="servicios" class="services section-highlight">
-            <div class="container">
-
-                <h2 class="section-title">Nuestros servicios</h2>
-
-                <div class="services-grid">
-
-                    <article class="service-card">
-                        <ion-icon name="airplane-outline"></ion-icon>
-                        <h3>Visas y permisos</h3>
-                        <p>Asesoría y gestión de visas temporales y permanentes.</p>
-                    </article>
-
-                    <article class="service-card">
-                        <ion-icon name="document-text-outline"></ion-icon>
-                        <h3>Regularización migratoria</h3>
-                        <p>Corrección de estatus y procesos administrativos.</p>
-                    </article>
-
-                    <article class="service-card">
-                        <ion-icon name="business-outline"></ion-icon>
-                        <h3>Procesos laborales</h3>
-                        <p>Trámites para empresas y contratación extranjera.</p>
-                    </article>
-
-                    <article class="service-card">
-                        <ion-icon name="school-outline"></ion-icon>
-                        <h3>Estudios en el extranjero</h3>
-                        <p>Orientación migratoria para estudiantes.</p>
-                    </article>
-
-                </div>
-            </div>
-        </section>
-
-        <!-- FAQ -->
-        <section id="faq" class="faq">
-            <div class="container">
-
-                <h2 class="section-title">Preguntas frecuentes</h2>
-
-                <div class="faq-list">
-
-                    <details class="faq-item">
-                        <summary>¿Cuánto tiempo tarda un trámite migratorio?</summary>
-                        <p>Depende del tipo de proceso y del país, pero te damos tiempos reales desde el inicio.</p>
-                    </details>
-
-                    <details class="faq-item">
-                        <summary>¿Puedo iniciar un trámite si estoy irregular?</summary>
-                        <p>En muchos casos sí. Analizamos tu situación antes de cualquier acción.</p>
-                    </details>
-
-                    <details class="faq-item">
-                        <summary>¿Ofrecen asesoría en línea?</summary>
-                        <p>Sí. Atendemos tanto de forma presencial como virtual.</p>
-                    </details>
-
-                </div>
-            </div>
-        </section>
-
-        <!-- CONTACTO -->
-        <section id="contacto" class="contact section-highlight">
-            <div class="container contact-grid">
-
-                <div class="contact-info">
-                    <h2 class="section-title">Contacto</h2>
-                    <p>
-                        Da el primer paso con una asesoría profesional.
-                        Cuéntanos tu caso y te contactaremos.
-                    </p>
-
-                    <ul class="contact-details">
-                        <li>
-                            <ion-icon name="mail-outline"></ion-icon>
-                            maru.calderom@cimconsultoria.mx
-                        </li>
-                        <li>
-                            <ion-icon name="call-outline"></ion-icon>
-                            5580344154 
-                        </li>
-                        <li>
-                            <ion-icon name="call-outline"></ion-icon>
-                            5540547510
-                        </li>
-                    </ul>
-                </div>
-
-                <form class="contact-form" id="contactForm" action="send-form.php" method="POST" novalidate>
-                    <input type="text" id="nombre" name="nombre" placeholder="Nombre completo" required>
-                    <input type="tel" id="telefono" name="telefono" placeholder="+52 000 000 0000" required>
-                    <input type="email" id="email" name="email" placeholder="Correo electrónico" required>
-                    <textarea name="mensaje" id="mensaje" placeholder="Cuéntanos tu caso" required></textarea>
-                    <button type="submit" class="btn-primary">Enviar mensaje</button>
-                </form>
-
-            </div>
-        </section>
-
-    </main>
-
-    <!-- FOOTER -->
-    <footer class="footer">
-        <div class="container">
-            <p>© <span id="year"></span> Consultoría Integral Migratoria. Todos los derechos reservados.</p>
         </div>
-    </footer>
 
-    <!-- LOADER -->
-    <div class="loader">
-        <div class="loader-mask"></div>
+        <div class="hero-media">
 
-        <div class="loader-content">
-            <img src="images/cim.jpeg" alt="CIM Logo">
-            <span>Consultoría Integral Migratoria</span>
+          <div class="hero-image-frame">
+
+            <img
+              class="hero-image"
+              src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&amp;fit=crop&amp;w=1400&amp;q=85"
+              alt="Arquitectura contemporánea de edificios internacionales"
+              width="1200"
+              height="1600"
+              fetchpriority="high"
+            >
+
+            <div class="hero-image-overlay"></div>
+
+            <div class="hero-image-caption">
+              <span>01 / NUEVOS HORIZONTES</span>
+              <strong>Más allá de las fronteras.</strong>
+            </div>
+
+          </div>
+
+          <div class="hero-seal" aria-hidden="true">
+            <i class="bi bi-compass"></i>
+            <span>UNA NUEVA PERSPECTIVA</span>
+          </div>
+
+          <div class="hero-side-label" aria-hidden="true">
+            CIM — CONSULTORÍA INTERNACIONAL
+          </div>
+
         </div>
+
+      </div>
+
+    </section>
+
+    <!-- NOSOTROS -->
+    <section
+      class="intro-section section-pad"
+      id="nosotros"
+      aria-labelledby="intro-title"
+    >
+
+      <div class="container intro-grid">
+
+        <div class="intro-aside reveal">
+          <span class="section-index">01 / QUIÉNES SOMOS</span>
+
+          <div class="intro-aside-decoration">
+            <i class="bi bi-arrow-down-right" aria-hidden="true"></i>
+          </div>
+        </div>
+
+        <div class="intro-main">
+
+          <p class="eyebrow eyebrow-dark reveal">
+            EXPERIENCIA, CLARIDAD Y COMPROMISO
+          </p>
+
+          <h2 class="section-title intro-title reveal" id="intro-title">
+            Las grandes decisiones
+            merecen un
+            <em>acompañamiento extraordinario.</em>
+          </h2>
+
+          <p class="intro-description reveal">
+            En CIM entendemos que un proceso migratorio
+            representa mucho más que un trámite:
+            es una oportunidad para construir un futuro,
+            reencontrarse con seres queridos o alcanzar
+            nuevas metas.
+          </p>
+
+          <p class="intro-description reveal">
+            Por eso ofrecemos atención personalizada
+            y orientación estratégica, adaptada a las
+            necesidades de cada persona.
+          </p>
+
+          <div class="intro-values reveal">
+
+            <div class="value-item">
+              <span>01</span>
+              <strong>Confianza</strong>
+              <p>Información clara y trato cercano.</p>
+            </div>
+
+            <div class="value-item">
+              <span>02</span>
+              <strong>Experiencia</strong>
+              <p>Atención especializada en materia migratoria.</p>
+            </div>
+
+            <div class="value-item">
+              <span>03</span>
+              <strong>Compromiso</strong>
+              <p>Acompañamiento durante cada etapa.</p>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- SERVICIOS -->
+    <section
+      class="services-section section-pad"
+      id="servicios"
+      aria-labelledby="services-title"
+    >
+
+      <div class="container">
+
+        <div class="section-heading services-heading">
+
+          <div class="reveal">
+            <span class="section-index">02 / NUESTRA EXPERIENCIA</span>
+
+            <h2 class="section-title" id="services-title">
+              Cada destino comienza
+              con una <em>decisión.</em>
+            </h2>
+          </div>
+
+          <p class="section-lead reveal">
+            Soluciones de asesoría migratoria para
+            acompañarte en tus próximos proyectos.
+          </p>
+
+        </div>
+
+        <div class="services-grid">
+
+          <article class="service-card service-card-featured reveal">
+
+            <span class="service-number">01 / 04</span>
+
+            <div class="service-icon">
+              <i class="bi bi-passport" aria-hidden="true"></i>
+            </div>
+
+            <div class="service-card-content">
+              <h3>Visas y permisos</h3>
+
+              <p>
+                Orientación para solicitudes de visas,
+                permisos y documentación relacionada
+                con tus objetivos de viaje o residencia.
+              </p>
+
+              <a href="#contacto" aria-label="Consultar sobre visas y permisos">
+                Consultar servicio
+                <i class="bi bi-arrow-up-right" aria-hidden="true"></i>
+              </a>
+            </div>
+
+            <div class="service-decoration" aria-hidden="true">
+              <i class="bi bi-globe2"></i>
+            </div>
+
+          </article>
+
+          <article class="service-card reveal">
+
+            <span class="service-number">02 / 04</span>
+
+            <div class="service-icon">
+              <i class="bi bi-file-earmark-check" aria-hidden="true"></i>
+            </div>
+
+            <div class="service-card-content">
+              <h3>Regularización migratoria</h3>
+
+              <p>
+                Asesoría sobre alternativas y requisitos
+                para regularizar tu situación migratoria.
+              </p>
+
+              <a href="#contacto" aria-label="Consultar sobre regularización migratoria">
+                Consultar servicio
+                <i class="bi bi-arrow-up-right" aria-hidden="true"></i>
+              </a>
+            </div>
+
+          </article>
+
+          <article class="service-card reveal">
+
+            <span class="service-number">03 / 04</span>
+
+            <div class="service-icon">
+              <i class="bi bi-briefcase" aria-hidden="true"></i>
+            </div>
+
+            <div class="service-card-content">
+              <h3>Procesos laborales</h3>
+
+              <p>
+                Orientación migratoria relacionada
+                con proyectos profesionales y
+                oportunidades de trabajo.
+              </p>
+
+              <a href="#contacto" aria-label="Consultar sobre procesos laborales">
+                Consultar servicio
+                <i class="bi bi-arrow-up-right" aria-hidden="true"></i>
+              </a>
+            </div>
+
+          </article>
+
+          <article class="service-card reveal">
+
+            <span class="service-number">04 / 04</span>
+
+            <div class="service-icon">
+              <i class="bi bi-mortarboard" aria-hidden="true"></i>
+            </div>
+
+            <div class="service-card-content">
+              <h3>Estudios en el extranjero</h3>
+
+              <p>
+                Acompañamiento para comprender
+                los procesos y documentos migratorios
+                asociados con proyectos académicos.
+              </p>
+
+              <a href="#contacto" aria-label="Consultar sobre estudios en el extranjero">
+                Consultar servicio
+                <i class="bi bi-arrow-up-right" aria-hidden="true"></i>
+              </a>
+            </div>
+
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- NUESTRO ENFOQUE -->
+    <section
+      class="approach-section section-pad"
+      id="metodo"
+      aria-labelledby="approach-title"
+    >
+
+      <div class="container">
+
+        <div class="approach-header">
+
+          <span class="section-index section-index-light reveal">
+            03 / NUESTRA FILOSOFÍA
+          </span>
+
+          <h2 class="section-title reveal" id="approach-title">
+            Un proceso claro.
+            <em>Un camino acompañado.</em>
+          </h2>
+
+        </div>
+
+        <div class="approach-grid">
+
+          <div class="approach-step reveal">
+            <span class="approach-number">01</span>
+
+            <i class="bi bi-chat-square-text" aria-hidden="true"></i>
+
+            <h3>Escuchamos tu historia</h3>
+
+            <p>
+              Comprendemos tus necesidades,
+              circunstancias y objetivos migratorios.
+            </p>
+          </div>
+
+          <div class="approach-step reveal">
+            <span class="approach-number">02</span>
+
+            <i class="bi bi-compass" aria-hidden="true"></i>
+
+            <h3>Analizamos las opciones</h3>
+
+            <p>
+              Revisamos contigo las alternativas
+              y los requisitos aplicables a tu caso.
+            </p>
+          </div>
+
+          <div class="approach-step reveal">
+            <span class="approach-number">03</span>
+
+            <i class="bi bi-signpost-split" aria-hidden="true"></i>
+
+            <h3>Te acompañamos</h3>
+
+            <p>
+              Brindamos orientación durante las etapas
+              del proceso que correspondan a tu servicio.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- PODCAST -->
+    <section
+      class="podcast-section section-pad"
+      id="podcast"
+      aria-labelledby="podcast-title"
+    >
+
+      <div class="container podcast-grid">
+
+        <div class="podcast-visual reveal">
+
+          <div class="podcast-visual-inner">
+            <span class="podcast-small-label">CIM / CONTENIDO</span>
+
+            <i class="bi bi-mic-fill podcast-mic" aria-hidden="true"></i>
+
+            <div class="podcast-visual-bottom">
+              <span>VOCES, HISTORIAS Y PERSPECTIVAS</span>
+              <strong>Conciencia Migratoria.</strong>
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="podcast-content">
+
+          <span class="section-index reveal">
+            04 / CONVERSACIONES QUE IMPORTAN
+          </span>
+
+          <h2 class="section-title reveal" id="podcast-title">
+            Hay historias que
+            merecen ser <em>escuchadas.</em>
+          </h2>
+
+          <p class="reveal">
+            Conversaciones sobre experiencias,
+            derechos y realidades migratorias,
+            con invitados y perspectivas profesionales.
+          </p>
+
+          <a class="btn btn-dark reveal" href="./pages/podcast.html">
+            Descubrir el podcast
+            <i class="bi bi-arrow-up-right" aria-hidden="true"></i>
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- CONTACTO -->
+    <section
+      class="contact-section"
+      id="contacto"
+      aria-labelledby="contact-title"
+    >
+
+      <div class="container">
+
+        <div class="contact-panel">
+
+          <div class="contact-content reveal">
+
+            <span class="eyebrow">05 / EL SIGUIENTE PASO</span>
+
+            <h2 class="section-title" id="contact-title">
+              Tu historia tiene
+              nuevos <em>horizontes.</em>
+            </h2>
+
+            <p>
+              Conversemos sobre tus objetivos
+              y las alternativas para tu proceso migratorio.
+            </p>
+
+          </div>
+
+          <a
+            class="contact-action reveal"
+            href="mailto:maru.calderom@cimconsultoria.mx?subject=Consulta%20migratoria%20-%20CIM"
+            aria-label="Enviar un correo a Consultoría Integral Migratoria"
+          >
+            <span>INICIAR UNA CONVERSACIÓN</span>
+            <i class="bi bi-arrow-up-right" aria-hidden="true"></i>
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+
+    <div class="container">
+
+      <div class="footer-main">
+
+        <div class="footer-brand">
+
+          <img
+            src="./assets/images/cim_grande.png"
+            alt="Consultoría Integral Migratoria"
+            width="210"
+            height="80"
+            loading="lazy"
+          >
+
+          <p>
+            Acompañamos decisiones importantes
+            con claridad, compromiso y una
+            visión internacional.
+          </p>
+
+        </div>
+
+        <div class="footer-column">
+          <span>EXPLORAR</span>
+          <a href="#inicio">Inicio</a>
+          <a href="#nosotros">Nosotros</a>
+          <a href="#servicios">Servicios</a>
+          <a href="#podcast">Podcast</a>
+        </div>
+
+        <div class="footer-column">
+          <span>CONTACTO</span>
+
+          <a href="mailto:maru.calderom@cimconsultoria.mx">
+            Escríbenos
+          </a>
+
+          <a href="#contacto">
+            Solicitar información
+          </a>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+
+        <p>
+          © <span id="current-year">2026</span>
+          Consultoría Integral Migratoria.
+          Todos los derechos reservados.
+        </p>
+
+        <a href="#inicio">
+          Volver arriba
+          <i class="bi bi-arrow-up" aria-hidden="true"></i>
+        </a>
+
+      </div>
+
     </div>
 
-    <!-- Ligthbox -->
-    <div class="podcast-lightbox" id="podcastLightbox">
-        <div class="lightbox-overlay"></div>
+  </footer>
 
-        <div class="lightbox-content">
-            <button class="lightbox-close">&times;</button>
+  <!-- GSAP -->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.15.1/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.15.1/dist/ScrollTrigger.min.js"></script>
 
-            <div class="lightbox-video"></div>
+  <!-- JavaScript vanilla -->
+  <script type="module" src="./js/main.js"></script>
 
-            <div class="lightbox-meta">
-                <h3 id="lightboxTitle"></h3>
-                <p id="lightboxDescription"></p>
-
-                <div class="lightbox-actions">
-                    <a href="#" target="_blank" id="visitFacebook" class="btn-secondary">
-                        Ver en Facebook
-                    </a>
-
-                    <button id="shareBtn" class="btn-primary">
-                        Compartir
-                    </button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Hero Icons Script -->
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-
-    <!-- GSAP -->
-    <script src="https://unpkg.com/gsap@3/dist/gsap.min.js"></script>
-    <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
-
-    <!-- Core JS -->
-    <script src="js/menu.js"></script>
-    <script src="js/app.js"></script>
-
-    <!-- Animations -->
-    <script src="js/main.js"></script>
-
-    <!-- Inline small utilities -->
-    <script>
-        (function () {
-            const yearElement = document.getElementById("year");
-            if (yearElement) {
-                yearElement.textContent = new Date().getFullYear();
-            }
-        })();
-    </script>
 </body>
 </html>
