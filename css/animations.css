@@ -1,0 +1,60 @@
+
+/* Animación sutil del sello del hero */
+@keyframes sealFloat {
+  0%, 100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.hero-seal {
+  animation: sealFloat 5s ease-in-out infinite;
+}
+
+/* Detalles interactivos */
+@keyframes arrowDown {
+  0%, 100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(6px);
+  }
+}
+
+.scroll-indicator:hover i {
+  animation: arrowDown 1s ease-in-out infinite;
+}
+
+/* Tratamiento visual de imágenes */
+.hero-image {
+  filter: saturate(.8) contrast(1.04);
+}
+
+.hero-image-frame {
+  box-shadow: 0 25px 60px rgba(16,36,55,.12);
+}
+
+/* Efecto del enlace de contacto */
+.contact-action i {
+  transition: transform .35s ease;
+}
+
+.contact-action:hover i {
+  transform: translate(5px, -5px);
+}
+
+/* Accesibilidad: movimiento reducido */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: .01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: .01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
