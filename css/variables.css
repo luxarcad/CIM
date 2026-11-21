@@ -1,0 +1,31 @@
+:root {
+    /* Identidad de marca*/
+    --color-primary: #102437;
+    --color-secondary: #176b73;
+    --color-background: #f7f5ef;
+    --color-sand: #d9c3a3;
+    --color-accent: #b78b55;
+
+    /* Textos */
+    --color-text: #172531;
+    --color-text-muted: #66747b;
+    --color-white: #ffffff;
+
+    /* Tipografias */
+    --font-display: "Fraunces", Georgia, serif;
+    --font-body: "Manrope", Arial, sans-serif;
+
+    /* Espaciado */
+    --section-spacing: clamp(5rem, 9vw, 9rem);
+    --container-width: 1320px;
+
+    /* Bordes */
+    --radius-sm: 8px;
+    --radius-md: 16px;
+    --radius-lg: 24px;
+
+    /* Animaciones */
+    --transition-fast: 200ms ease;
+    --transition-normal: 350ms ease;
+    --transition-slow: 650ms ease;
+}
